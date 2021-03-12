@@ -1,0 +1,33 @@
+mayor :: Integer -> Integer -> Integer
+mayor x y = div ((x + y) + abs(x - y)) 2
+
+mayor3 :: Integer -> Integer -> Integer -> Integer
+mayor3 x y z = mayor x (mayor y z)
+
+
+bigger :: [Integer] -> Integer
+bigger [x] = x
+bigger (x:y:z) = max x(bigger(y:z))
+
+largest :: Int -> Int -> Int
+largest x y = max
+
+
+largest :: Int -> Int -> Int
+largest x y = max (x y)
+
+large3 :: Int -> Int -> Int -> Int
+large3 x y z = largest x (largest y z)
+
+
+triangulocc a b = if (a == b)
+then "Triangulo isosceles."
+else "Triangulo escaleno."
+
+trianguloch a c = if (a == (cateto a c) || c == (cateto a c))
+then "Triangulo isosceles."
+else "Triangulo escaleno."
+
+hipotenusa a b = sqrt ((a * a) + (b * b))
+
+cateto a c = sqrt ((c * c) - (a * a))
